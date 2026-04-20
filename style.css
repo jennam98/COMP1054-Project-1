@@ -1,8 +1,6 @@
 
 :root {
-  --color-primary: #00f7ff;
-  --color-primary-alt: #ffffff44;
-  --color-secondary: #d42257;
+  --color-primary: #ff0099;
   --color-background: #020014;
   --color-text: rgb(61, 68, 255);
   --color-light: #fff;
@@ -18,12 +16,16 @@
 
 body {
     background-color: var(--color-background);
-    color: var(--color-text);
-    line-height: 1.5;
-    padding: 2rem;
+    color: var(--color-light);
     font-family: var(--font-family-text);
+    line-height: 1.6;    
+    padding: 0 50px 0 50px;
+
+}
 
 
+h2, h3, h4 {
+    color: var(--color-primary);
 }
 
 
@@ -39,47 +41,226 @@ header .container {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    padding: 20px 20px 0 20px;
 }
 
 header h1 {
     font-family: var(--font-family-headings);
-    color: var(--color-primary);
+    color: var(--color-light);
     font-size: var(--font-size-h1);
     font-weight: 400;
-    text-shadow: 5px 5px 2px var(--color-primary-alt);
+    text-shadow: 5px 3px 1px var(--color-primary);
 }
+
+
 
 .skip-link {
 
-    color: var(--color-text);
+    color: var(--color-light);
     z-index: 100;
     font-family: var(--font-family-subheadings);
+    padding: 1rem;
+    position: absolute;
 }
 
 .skip-link:hover {
+    color: var(--color-primary);
+}
+
+header p {
     color: var(--color-light);
 }
 
-header h2, p {
-    color: var(--color-text);
-}
 
 header svg {
-    fill: var(--color-light);
+    fill: var(--color-primary);
     width: 50px;
     height: auto;
 }
 
 header .link-github {
 
-    padding: 10px 14px;
-    background-color: var(--color-primary);
-    color: var(--color-text);
+    padding: 10px 30px 10px 20px;
+    background-color: var(--color-text);
+    color: var(--color-light);
     text-decoration: none;
     display: inline-flex;
     align-items: center;
     border-radius: 8px;
-    gap: 8px;
+    gap: 10px;
     margin-top: 1rem;
+    font-family: var(--font-family-headings);
+    font-size: var(--font-size-h4);
 }
 
+nav ul {
+    margin: 4rem 0 3rem 0;
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+    background-color: var(--color-text);
+    color: var(--color-light);
+    justify-content: center;
+    padding: 0.5rem 1rem;
+    
+}
+
+nav ul li {
+    justify-content: center;
+}
+
+nav ul li:hover {
+   color: var(--color-primary);
+}
+
+
+
+
+main h2 {
+    font-family: var(--font-family-headings);
+    color: var(--color-light);
+    font-size: var(--font-size-h2);
+    font-weight: 400;
+    margin-bottom: 1rem;
+
+}
+
+main blockquote {
+    border-left: 4px solid var(--color-text);
+    padding-left: 1rem;
+    margin-left: 2rem;
+    color: var(--color-light);
+    font-style: italic;
+    margin-bottom: 1rem;
+}
+
+main strong, h3 {
+    color: var(--color-primary);
+}
+
+main h3 {
+    font-size: var(--font-size-h3);
+}
+
+
+main ul {
+    list-style: disc;
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+    color: var(--color-primary);
+    
+}
+
+
+
+#files h3 {
+    text-align: center;
+    font-size: var(--font-size-h2);
+    font-family: var(--font-family-headings);
+    font-weight: 400;
+    color: var(--color-light);
+    padding-top: 20px;
+}
+
+#files a {
+    color: var(--color-light);
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap:nowrap;
+    font-size: var(--font-size-h3);
+}
+
+#files  {
+    background-color: var(--color-text);
+    border-radius: var(--border-radius);
+    padding-bottom: 20px;
+}
+
+#files a:hover {
+    color: var(--color-primary);
+}
+
+
+
+.profile h4 {
+    font-family: var(--font-family-text);
+    color: var(--color-primary);
+    font-size: var(--font-size-h4);
+    padding-top: 20px;
+    
+
+}
+
+.profile ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    background-color: var(--color-text);
+    padding: 10px;
+    border-radius: var(--border-radius);
+}
+
+  
+
+.profile {
+    text-align: center;
+}
+
+
+
+.profile a:hover {
+    color: var(--color-primary);
+}
+    
+
+
+
+#styles h2 {
+    text-align: center;
+}
+
+#styles ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    background-color: var(--color-text);
+    padding: 10px;
+    border-radius: var(--border-radius);
+}
+
+#styles a{
+    display: flex;
+    align-content: center;
+}
+
+.link-allstyles {
+  display: block;
+  text-align: center;
+  margin: 20px auto 0;
+  width: fit-content;
+}
+
+.link-allstyles:hover {
+    color: var(--color-primary);
+}
+
+.page-footer {
+    padding-top: 20px;
+}
+
+.page-footer svg {
+    fill: var(--color-light);
+    width: 20px;
+    height: auto;
+}
+
+.page-footer ul {
+    list-style:  none;
+}
+
+.page-footer ul li:hover {
+    color: var(--color-primary);
+}
